@@ -12,65 +12,65 @@ import { SIZES, images } from '../../constants'
 
 const Walkthrough2 = ({ animate }) => {
 
-    // // Moti inital position
-    // const motiImage1 = useDynamicAnimation(() => ({
-    //     top: "30%",
-    //     left: "25%"
-    // }))
+    // Moti inital position
+    const motiImage1 = useDynamicAnimation(() => ({
+        top: "30%",
+        left: "25%"
+    }))
 
-    // const motiImage2 = useDynamicAnimation(() => ({
-    //     top: "45%",
-    //     left: "15%"
-    // }))
+    const motiImage2 = useDynamicAnimation(() => ({
+        top: "45%",
+        left: "15%"
+    }))
 
-    // const motiImage3 = useDynamicAnimation(() => ({
-    //     top: "58%",
-    //     left: "25%"
-    // }))
+    const motiImage3 = useDynamicAnimation(() => ({
+        top: "58%",
+        left: "25%"
+    }))
 
-    // const motiImage4 = useDynamicAnimation(() => ({
-    //     top: "61%",
-    //     left: "40%"
-    // }))
+    const motiImage4 = useDynamicAnimation(() => ({
+        top: "61%",
+        left: "40%"
+    }))
 
-    // const motiImage5 = useDynamicAnimation(() => ({
-    //     top: "27%",
-    //     left: "50%"
-    // }))
+    const motiImage5 = useDynamicAnimation(() => ({
+        top: "27%",
+        left: "50%"
+    }))
 
-    // React.useEffect(() => {
-    //     if (animate) {
-    //         motiImage1.animateTo({
-    //             top: "20%",
-    //             left: "15%"
-    //         })
+    React.useEffect(() => {
+        if (animate) {
+            motiImage1.animateTo({
+                top: "20%",
+                left: "15%"
+            })
 
-    //         motiImage2.animateTo({
-    //             top: "38%",
-    //             left: -10
-    //         })
+            motiImage2.animateTo({
+                top: "38%",
+                left: -10
+            })
 
-    //         motiImage3.animateTo({
-    //             top: "62%",
-    //             left: '5%'
-    //         })
+            motiImage3.animateTo({
+                top: "62%",
+                left: '5%'
+            })
 
-    //         motiImage4.animateTo({
-    //             top: "75%",
-    //             left: '40%'
-    //         })
+            motiImage4.animateTo({
+                top: "75%",
+                left: '40%'
+            })
 
-    //         motiImage5.animateTo({
-    //             top: "15%",
-    //             left: '65%'
-    //         })
+            motiImage5.animateTo({
+                top: "15%",
+                left: '65%'
+            })
 
-    //     }
+        }
 
-    //     return () => {
+        return () => {
 
-    //     }
-    // }, [animate])
+        }
+    }, [animate])
 
 
     return (
@@ -101,7 +101,7 @@ const Walkthrough2 = ({ animate }) => {
                 }}
             />
 
-            {/* <MotiImage
+            <MotiImage
                 state={motiImage1}
                 source={images.walkthrough_02_03}
                 style={styles.image}
@@ -129,7 +129,7 @@ const Walkthrough2 = ({ animate }) => {
                 state={motiImage5}
                 source={images.walkthrough_02_07}
                 style={styles.image}
-            /> */}
+            />
 
         </View>
     )
